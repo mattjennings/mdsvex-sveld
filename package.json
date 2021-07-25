@@ -1,0 +1,24 @@
+{
+	"name": "mdsvex-sveld",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [],
+	"author": "Matt Jennings",
+	"license": "ISC",
+	"type": "module",
+	"peerDependencies": {
+		"svelte": "^3.0.0"
+	},
+	"devDependencies": {
+		"slash": "^4.0.0",
+		"svelte": "^3.38.3"
+	},
+	"dependencies": {
+		"sveld": "^0.8.2",
+		"svelte-preprocess": "^4.7.4",
+		"unist-util-visit": "^3.1.0"
+	},
+	"exports": {
+		".": "./index.js"
+	}
+}
