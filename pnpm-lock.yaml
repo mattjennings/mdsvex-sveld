@@ -8,12 +8,12 @@ specifiers:
   unist-util-visit: ^3.1.0
 
 dependencies:
+  slash: 4.0.0
   sveld: 0.8.2
   svelte-preprocess: 4.7.4_svelte@3.40.2
   unist-util-visit: 3.1.0
 
 devDependencies:
-  slash: 4.0.0
   svelte: 3.40.2
 
 packages:
@@ -327,7 +327,7 @@ packages:
   /slash/4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
-    dev: true
+    dev: false
 
   /strip-indent/3.0.0:
     resolution: {integrity: sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==}
