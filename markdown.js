@@ -114,7 +114,9 @@ function createTable({ columns, rows }) {
 
 function formatPropType(type) {
   if (type === undefined) return MD_TYPE_UNDEFINED;
-  return type.replace(/\|/g, "&#124;");
+  return type
+    .replace(/[{}]/g, (c) => ({ "{": "&#123;", "}": "&#125;" }[c]))
+    .replace(/\|/g, "&#124;");
 }
 
 function formatPropValue(value) {
