@@ -2,7 +2,7 @@
 
 Generate documentation for your Svelte components using [sveld](https://github.com/IBM/sveld)
 
-# Setup
+## Setup
 
 ```
 npm install mdsvex-sveld
@@ -19,7 +19,7 @@ const config = {
 };
 ```
 
-# Usage
+## Usage
 
 You can add generated tables that describe the components props, slots, events, etc. with the following syntax:
 
@@ -75,7 +75,7 @@ This would be the generated markdown:
 | click | forwarded |        |
 ```
 
-## Options
+### Options
 
 If you don't want all tables at once, you can specify a specific table:
 
@@ -91,5 +91,3 @@ If you don't want all tables at once, you can specify a specific table:
 | type    | <code>"button" &#124; "submit" &#124; "reset"</code> | <code>'button'</code> | The button type                          |
 | primary | <code>boolean</code>                                 | <code>false</code>    | Set to `true` to use the primary variant |
 ```
-
-This way will not have the section heading added above the table.
