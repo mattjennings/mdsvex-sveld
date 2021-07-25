@@ -35,10 +35,9 @@ export default function mdsvexSveld() {
         const [, section] = node.lang.split(":");
         try {
           if (relativeImport) {
-            const aliasImport = resolveAlias(
-              relativeImport,
-              viteConfig.resolve.alias
-            );
+            const aliasImport = viteConfig?.resolve?.alias
+              ? resolveAlias(relativeImport, viteConfig.resolve.alias)
+              : null;
 
             const parsed = path.parse(file.filename);
             const componentPath = aliasImport
